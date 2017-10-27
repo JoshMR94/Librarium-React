@@ -15,7 +15,11 @@ nav{
     background-image: linear-gradient(top, #FFF, #CCC);/*El estandar por defecto*/
     overflow:hidden;
     padding:10px;
+<<<<<<< HEAD
     width:98.7%;
+=======
+    width:100%;
+>>>>>>> 62af7b0eeca4927237537cd9c4560d975d4fb60a
 }
 
 nav ul{

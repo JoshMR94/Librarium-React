@@ -5,7 +5,10 @@
   "dependencies": {
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+<<<<<<< HEAD
     "react-router-dom": "^4.2.2",
+=======
+>>>>>>> 62af7b0eeca4927237537cd9c4560d975d4fb60a
     "react-scripts": "1.0.14"
   },
   "scripts": {
@@ -14,4 +17,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 62af7b0eeca4927237537cd9c4560d975d4fb60a
