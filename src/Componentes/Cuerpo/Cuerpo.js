@@ -4,6 +4,7 @@ import './Cuerpo.css';
 
 
 import MisLibros from './MisLibros/MisLibros';
+import MisAutores from './MisAutores/MisAutores';
 
 class Cuerpo extends Component {
   render() {
@@ -11,6 +12,7 @@ class Cuerpo extends Component {
       <div id="cuerpo">
         <Switch>
           <Route exact path='/MisLibros' component={MisLibros}/>
+          <Route exact path='/MisAutores' component={MisAutores}/>
         </Switch>
       </div>
     );

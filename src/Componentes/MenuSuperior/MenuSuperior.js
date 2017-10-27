@@ -7,8 +7,8 @@ class MenuSuperior extends Component {
     return (
       <nav>
         <ul>
-            <li><Link to='/MisLibros'>MisLibros</Link></li>
-            <li><a title="MisAutores" href="#">Mis Autores</a></li>
+            <li><Link to='/MisLibros'>Mis Libros</Link></li>
+            <li><Link to='/MisAutores'>Mis Autores</Link></li>
             <li><a title="MisNoticias" href="#">Mis Noticias</a></li>
             <li><a title="MiCuenta" href="#">Mi Cuenta</a></li>
             <li><a title="Opciones" href="#">Opciones</a></li>
