@@ -33,11 +33,11 @@ class MiCuenta extends Component {
     switch(fieldName) {
       case 'email':
         emailValido = value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
-        fieldValidationErrors.email = emailValido ? '' : ' is invalid';
+        fieldValidationErrors.email = emailValido ? '' : ' no valido.';
         break;
       case 'password':
         passwordValido = value.length >= 6;
-        fieldValidationErrors.password = passwordValido ? '': ' is too short';
+        fieldValidationErrors.password = passwordValido ? '': ' muy corta.';
         break;
       default:
         break;
@@ -58,27 +58,29 @@ class MiCuenta extends Component {
 
   render () {
     return (
-      <form className="formulario">
-        <h2>Conectarse a su cuenta</h2>
-        <div className="validacion">
-          <FormErrors formErrors={this.state.formErrors} />
-        </div>
-        <div className={`form-group ${this.errorClass(this.state.formErrors.email)}`}>
-          <label htmlFor="email">Email address</label>
-          <input type="email" required name="email"
-            placeholder="Email"
-            value={this.state.email}
-            onChange={this.handleUserInput}  />
-        </div>
-        <div className={`form-group ${this.errorClass(this.state.formErrors.password)}`}>
-          <label htmlFor="password">Password</label>
-          <input type="password" name="password"
-            placeholder="Password"
-            value={this.state.password}
-            onChange={this.handleUserInput}  />
-        </div>
-        <button type="submit" disabled={!this.state.formValid}>Conectarse</button>
-      </form>
+      <div id ="formularioLogin">
+        <form className="formulario">
+          <h2>Conectarse a su cuenta</h2>
+          <div className="validacion">
+            <FormErrors formErrors={this.state.formErrors} />
+          </div>
+          <div className={`form-group ${this.errorClass(this.state.formErrors.email)}`}>
+            {/*<label htmlFor="email">Email address</label>*/}
+            <input type="email" required name="email"
+              placeholder="Email"
+              value={this.state.email}
+              onChange={this.handleUserInput}  />
+          </div>
+          <div className={`form-group ${this.errorClass(this.state.formErrors.password)}`}>
+            {/*<label htmlFor="password">Password</label>*/}
+            <input type="password" name="password"
+              placeholder="Password"
+              value={this.state.password}
+              onChange={this.handleUserInput}  />
+          </div>
+          <button type="submit" disabled={!this.state.formValid}>Conectarse</button>
+        </form>
+      </div>
     )
   }
 }
